@@ -1,0 +1,13 @@
+# ESP32 Learning Collection
+
+This repository is a collection of my ESP32 learning projects during my early development phase.
+
+Each branch is treated as a separate project or experiment, so I can keep ideas isolated while I learn and iterate.
+
+Development is done with PlatformIO in Visual Studio Code.
+
+## Notes
+
+- Main sketches live in `src/`
+- Additional experiments may appear in separate branches
+- The project is organized for hands-on learning and testing
