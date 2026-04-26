@@ -1,0 +1,64 @@
+# Embedded Learning Log - ESP32 (PlatformIO)
+
+This repository is part of my embedded systems learning journey.  
+I use it to practice core microcontroller concepts and document each experiment as I learn.
+
+## Current Exercise
+
+This project currently runs an ESP32 LED chaser with interactive control:
+
+- Cycles through 6 LEDs on pins `25, 26, 27, 16, 17, 18`
+- Uses PWM for LED brightness control
+- Reads a potentiometer on pin `34` to set brightness in real time
+- Uses a push button on pin `23` to start/stop the animation
+- Prints status messages to Serial Monitor at `115200`
+
+## Learning Goals Covered
+
+- GPIO output and pin mapping
+- PWM setup and brightness modulation
+- Analog input (`analogRead`) and value mapping
+- Debounced button-triggered state toggle
+- Non-blocking timing using `millis()`
+- Basic serial debugging and runtime visibility
+
+## Board and Environment
+
+- Platform: `espressif32`
+- Board: `mhetesp32devkit`
+- Framework: `arduino`
+- Monitor speed: `115200`
+
+Configured in `platformio.ini`.
+
+## Run the Project (Hardware)
+
+1. Open this project in VS Code.
+2. Install the PlatformIO IDE extension.
+3. Build firmware:
+   - `platformio run`
+4. Upload to board:
+   - `platformio run --target upload`
+5. Open serial monitor:
+   - `platformio device monitor -b 115200`
+
+## Wokwi Virtual Version
+
+This is the Wokwi virtual version of this project:
+
+https://wokwi.com/projects/462360919348337665
+
+Use it to simulate and test the same logic when hardware is not available.
+
+## Repository Structure
+
+- `src/main.cpp` - main firmware logic
+- `platformio.ini` - board/framework/build configuration
+- `include/` - headers for future modules
+- `lib/` - reusable libraries
+- `test/` - test scaffolding
+
+## Notes
+
+This repo is intentionally iterative.  
+As I learn new embedded concepts, I update the code and README to track progress.
